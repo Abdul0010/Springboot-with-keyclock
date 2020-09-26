@@ -1,0 +1,11 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<h2>My Tasks</h2>
+<ul th:each="task:${tasks}">
+    <li  th:text="${task}"></li>
+
+
+</ul>
+<p>
+    <a href="/logout">Logout</a>
+</p>
+</html>
